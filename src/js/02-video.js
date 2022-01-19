@@ -16,12 +16,13 @@ function playerCurrentTime(data) {
   // console.log(videoTime);
 
   localStorage.setItem(STORAGE_KEY, videoTime);
-  if (data.percent > 0.99) {
-    player.off('timeupdate');
-  }
+  // if (data.percent > 0.99) {
+  //   player.off('timeupdate');
+  // }
 }
 
 function endVideo() {
+  player.off('timeupdate');
   localStorage.removeItem(STORAGE_KEY);
   // console.log('11');
 }

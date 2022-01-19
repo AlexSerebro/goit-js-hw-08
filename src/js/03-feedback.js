@@ -16,12 +16,11 @@ populateTextArea();
 
 function onFormSubmit(event) {
   event.preventDefault();
-
   console.log('отправка формы');
   event.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
 
-  console.log(localObj);
+  // console.log(localObj);
 }
 
 function onFormInput(event) {
